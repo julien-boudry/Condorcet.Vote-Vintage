@@ -44,8 +44,8 @@ services:
       - MYSQL_USER=condorcet_user
       - MYSQL_PASSWORD=${CONDORCETDB_USER_PASSWORD}
       - MYSQL_DATABASE=condorcet
-    #ports:
-      #- 3306:3306
+    ports:
+      - "127.0.0.1:3306:3306"
     networks:
       - condorcet-network
 
