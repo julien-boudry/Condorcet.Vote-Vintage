@@ -9,6 +9,3 @@ services:
     tty: false
     post_start:
       - command: composer install --no-dev --no-interaction
-
-  phpmyadmin:
-    ports: !reset []
