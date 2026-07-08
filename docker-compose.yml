@@ -20,20 +20,6 @@ services:
     environment:
       - CONDORCETDB_USER_PASSWORD=${CONDORCETDB_USER_PASSWORD}
       - CADDY_EXTRA_CONFIG=${CADDY_EXTRA_CONFIG}
-
-  phpmyadmin:
-    image: phpmyadmin:latest
-    restart: always
-    ports:
-      - 8080:80
-    environment:
-      - PMA_ARBITRARY=1
-      - PMA_HOST=mariadb
-      - UPLOAD_LIMIT=100M
-    depends_on:
-      - mariadb
-    networks:
-      - condorcet-network
   mariadb:
     image: mariadb:latest
     restart: always
