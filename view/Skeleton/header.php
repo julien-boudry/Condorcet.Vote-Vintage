@@ -52,5 +52,8 @@
         <a href="https://desktop.condorcet.vote" target="_blank" rel="noopener" class="btn btn-sm maintenance-banner-btn">
             Try Condorcet Desktop &rarr;
         </a>
+        <p>
+            <strong><i class="fa fa-exclamation-triangle"></i> This service will soon be moved to <a href="https://vintage.condorcet.vote" target="_blank" rel="noopener">vintage.condorcet.vote</a> without prior notice</strong>, and this domain will host a new, next-generation Condorcet Vote service.
+        </p>
     </div>
 </div>

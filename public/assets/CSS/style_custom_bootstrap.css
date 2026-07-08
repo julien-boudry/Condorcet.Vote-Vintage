@@ -181,7 +181,6 @@ body {
     padding-top:50px;
     margin-bottom:60px;
     /* position:relative; */
-    padding-top:50px;
 }
 
 
@@ -319,7 +318,7 @@ body {
 
     .bs-docs-sidebar.affix{
         position:fixed;
-        top:20px
+        top:140px
     }
 
     .bs-docs-sidebar.affix-bottom{
