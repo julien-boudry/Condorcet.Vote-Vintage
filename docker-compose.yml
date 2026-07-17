@@ -1,12 +1,9 @@
 name: condorcet_vote
 services:
   php:
+    container_name: condorcet-vintage
     build: ./Docker/Web/.
     restart: always
-    ports:
-      - "80:80" # HTTP
-      - "443:443" # HTTPS
-      - "443:443/udp" # HTTP/3
     volumes:
       - ./:/app
       - caddy_data:/data
@@ -18,6 +15,7 @@ services:
     depends_on:
       - mariadb
     environment:
+      - SERVER_NAME=:80
       - CONDORCETDB_USER_PASSWORD=${CONDORCETDB_USER_PASSWORD}
       - CADDY_EXTRA_CONFIG=${CADDY_EXTRA_CONFIG}
   mariadb:
@@ -37,6 +35,8 @@ services:
 
 networks:
   condorcet-network: {}
+caddy-network:
+    external: true
 
 volumes:
   condorcetdb:
