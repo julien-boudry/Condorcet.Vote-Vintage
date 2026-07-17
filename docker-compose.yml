@@ -35,7 +35,7 @@ services:
 
 networks:
   condorcet-network: {}
-caddy-network:
+  caddy-network:
     external: true
 
 volumes:
