@@ -1,7 +1,6 @@
 services:
   php:
     environment:
-      - SERVER_NAME=${CONDORCETVOTE_PROD_DOMAIN}
       - CONDORCETDB_USER_PASSWORD=${CONDORCETDB_USER_PASSWORD}
     volumes:
       - caddy_data:/data
