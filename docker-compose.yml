@@ -11,6 +11,7 @@ services:
     # commentez la ligne suivante en production, elle permet d'avoir de beaux logs lisibles en dev
     tty: true
     networks:
+      - caddy-network
       - condorcet-network
     depends_on:
       - mariadb
