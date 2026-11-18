@@ -53,7 +53,7 @@
             Try Condorcet Desktop &rarr;
         </a>
         <p>
-            <strong><i class="fa fa-exclamation-triangle"></i> This service will soon be moved to <a href="https://vintage.condorcet.vote" target="_blank" rel="noopener">vintage.condorcet.vote</a> without prior notice</strong>, and this domain will host a new, next-generation Condorcet Vote service.
+            <strong><i class="fa fa-exclamation-triangle"></i> This service has moved to vintage.condorcet.vote.</strong> A new, next-generation Condorcet Vote service is now available at <a href="https://condorcet.vote" target="_blank" rel="noopener"><strong>condorcet.vote</strong></a>.
         </p>
     </div>
 </div>
